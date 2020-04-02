@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="3" parallel="tests">
+
+  <test name="chromeTest">
+  <parameter name="browser" value="Chrome" />
+  <parameter name="url" value="http://newtours.demoaut.com" />
+  <parameter name="expLoginPageTitle" value="Welcome: Mercury Tours" />
+  <parameter name="username" value="mercury" />
+  <parameter name="password" value="mercury" />
+  <parameter name="flyFrom" value="London" />
+  <parameter name="flyTo" value="Frankfurt" />
+  <parameter name="firstname" value="Rahul" />
+  <parameter name="lastname" value="Malhotra" />
+  <parameter name="creditnumber" value="35637650955" />
+  <parameter name="expConfText" value="itinerary has been booked!" />
+  
+  
+    <classes>
+      <class name="testng.E2EFlightReservation"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="firefoxTest">
+  <parameter name="browser" value="Firefox" />
+  <parameter name="url" value="http://newtours.demoaut.com" />
+  <parameter name="expLoginPageTitle" value="Welcome: Mercury Tours" />
+  <parameter name="username" value="mercury" />
+  <parameter name="password" value="mercury" />
+  <parameter name="flyFrom" value="London" />
+  <parameter name="flyTo" value="Frankfurt" />
+  <parameter name="firstname" value="Rahul" />
+  <parameter name="lastname" value="Malhotra" />
+  <parameter name="creditnumber" value="35637650955" />
+  <parameter name="expConfText" value="itinerary has been booked!" />
+  
+  
+    <classes>
+      <class name="testng.E2EFlightReservation"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="ieTest">
+  <parameter name="browser" value="IE" />
+  <parameter name="url" value="http://newtours.demoaut.com" />
+  <parameter name="expLoginPageTitle" value="Welcome: Mercury Tours" />
+  <parameter name="username" value="mercury" />
+  <parameter name="password" value="mercury" />
+  <parameter name="flyFrom" value="London" />
+  <parameter name="flyTo" value="Frankfurt" />
+  <parameter name="firstname" value="Rahul" />
+  <parameter name="lastname" value="Malhotra" />
+  <parameter name="creditnumber" value="35637650955" />
+  <parameter name="expConfText" value="itinerary has been booked!" />
+  
+  
+    <classes>
+      <class name="testng.E2EFlightReservation"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
